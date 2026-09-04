@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survive</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+    <script src="p5.play.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-database.js"></script>
+    
+    <script>
+        let  firebaseConfig = {
+             apiKey: "AIzaSyB-wdErqf1NAAmxOExRKXxbV-9FnVpPWIk",
+             authDomain: "game-c896f.firebaseapp.com",
+             databaseURL: "https://game-c896f-default-rtdb.firebaseio.com",
+             projectId: "game-c896f",
+             storageBucket: "game-c896f.firebasestorage.app",
+             messagingSenderId: "256425306097",
+             appId: "1:256425306097:web:56afeabb07d5ec6e904650"
+            };
+        firebase.initializeApp(firebaseConfig)
+    </script>
+    <script src="firebase.js"></script>
+    <script src="game.js"></script>
+    <script src="room.js"></script>
+</head>
+
+<body>
+    <script src="script.js"></script>
+</body>
+
+</html>
