@@ -19,6 +19,7 @@ function matchmaking(username){
             return
         }
         playerId = database.ref("matchmakeroom/players").push().key;
+        let playerNumber = qtd+1
         database.ref("matchmakeroom/players/"+playerId).set({
             name:username 
         })
