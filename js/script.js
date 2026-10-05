@@ -74,5 +74,7 @@ function gameStart(){
 }
 
 function screenGame() {
+    drawPlayers();
     background(gameImg);
+  
 }

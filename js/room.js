@@ -19,9 +19,19 @@ function matchmaking(username){
             return
         }
         playerId = database.ref("matchmakeroom/players").push().key;
-        let playerNumber = qtd+1
+        let playerNumber = qtd+1;
+        let startX;
+        if (playerNumber === 1){
+            startX = 70;
+        
+        }else{
+            startX = 90;
+        }
         database.ref("matchmakeroom/players/"+playerId).set({
-            name:username 
+            name:username,
+             number:playerNumber,
+             x:startX,
+             y:350
         })
         
       stateGame = "waiting"
@@ -37,7 +47,8 @@ function watchPlayers(){
             qtd = Object.keys(players).length;
         }
         if(qtd === lmtPlayers){
-            stateGame = "playing"
+            stateGame = "playing";
+            startPlayers()
         }
     })
 }
