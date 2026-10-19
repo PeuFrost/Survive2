@@ -1,0 +1,10 @@
+let firebaseConfig = {
+            apiKey: "AIzaSyB-wdErqf1NAAmxOExRKXxbV-9FnVpPWIk",
+            authDomain: "game-c896f.firebaseapp.com",
+            databaseURL: "https://game-c896f-default-rtdb.firebaseio.com",
+            projectId: "game-c896f",
+            storageBucket: "game-c896f.firebasestorage.app",
+            messagingSenderId: "256425306097",
+            appId: "1:256425306097:web:56afeabb07d5ec6e904650"
+        };
+        firebase.initializeApp(firebaseConfig)
