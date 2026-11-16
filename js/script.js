@@ -1,6 +1,7 @@
 let inputName;
 let enterButton;
 let backImg,gameImg;
+let cleanRoom
 
 function preload(){
     backImg = loadImage("./assets/BackgroundP.png");
@@ -27,6 +28,13 @@ function setup(){
     enterButton.style("border-radius","8px");
     enterButton.mousePressed(gameStart);
 
+    cleanRoom = createButton("Exit");
+    cleanRoom.size(120,40);
+    cleanRoom.style("cursor","pointer");
+    cleanRoom.style("font-size","14px");
+    cleanRoom.mousePressed(exitGame);
+
+
 }
 function draw(){
     background('#F2F0EF');
@@ -38,6 +46,7 @@ function draw(){
     }
     else if(stateGame === "playing"){
         screenGame()
+        
     }
 }
 function screenLogin(){
@@ -77,3 +86,4 @@ function screenGame() {
     background(gameImg);
     drawPlayers();
 }
+

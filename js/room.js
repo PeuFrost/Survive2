@@ -52,3 +52,22 @@ function watchPlayers(){
         }
     })
 }
+
+function exitGame(){
+    if (!playerId){
+        return
+    }
+    database.ref("matchmakeroom/players/"+playerId).remove().then(
+        function(){
+            playerId = undefined;
+            stateGame = "login"
+            gamePlayers = {}
+            playerSprites = {}
+
+
+        }
+    ).catch(function(error){
+        console.error(erro)
+    })
+    
+}
