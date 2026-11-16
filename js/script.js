@@ -28,12 +28,13 @@ function setup(){
     enterButton.style("border-radius","8px");
     enterButton.mousePressed(gameStart);
 
-    cleanRoom = createButton("Exit");
-    cleanRoom.size(120,40);
-    cleanRoom.style("cursor","pointer");
-    cleanRoom.style("font-size","14px");
-    cleanRoom.mousePressed(exitGame);
+    //  cleanRoom = createButton("Exit");
+    //  cleanRoom.size(120,40);
+    //  cleanRoom.style("cursor","pointer");
+    //  cleanRoom.style("font-size","14px");
+    //  cleanRoom.mousePressed(exitGame);
 
+    dropMenu = createDiv()
 
 }
 function draw(){
